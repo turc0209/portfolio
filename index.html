@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN for Bootstrap CSS and JS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  
-   
-    <!--Import Futura Font-->
-    <link rel="stylesheet" href="https://use.typekit.net/zst3dai.css">
-      <!--CDN for glider.js-->
-      <script src="glider.js"></script>
-      <link rel="stylesheet" type="text/css" href="glider.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>MTM6201 Final - Aya Turchio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN for Bootstrap CSS and JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--Import Futura Font-->
+  <link rel="stylesheet" href="https://use.typekit.net/zst3dai.css">
+  <!--CDN for glider.js CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>MTM6201 Final - Aya Turchio</title>
 </head>
+
 <body>
-    <ul class="skip-links">
-        <li><a href="#nav">Skip to main nav</a></li>
-        <li><a href="#main">Skip to main content</a></li>
-    </ul>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/at-logo.png" alt="Aya Turchio Logo" width="110" height="55" class="d-inline-block align-text-top"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">My Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <script>
-                        window.addEventListener('load', function(){
-                            new Glider(document.querySelector('.glider'), {
-                                setting-name: setting-value
-                            })
-                         })
-        </script>
-        <div class="glider-contain">
-            <div class="glider">
-              <div>your content here</div>
-              <div>your content here</div>
-              <div>your content here</div>
-              <div>your content here</div>
-            </div>
-          
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to main nav</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+  </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/at-logo.png" alt="Aya Turchio Logo" width="110" height="55" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- @Abhay: adding justify-content-end class -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <!-- @Abhay: removing me-auto class -->
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-    </main>
-</body>
-<footer>
+      </div>
+    </nav>
+  </header>
+  <main>
+        <div class="container row">
+            <div class="line col-md-4 col-sm-2 col-1">
+                <svg> <line x1="0" y1="0" x2="400" y2="0" style="stroke:#302C5F;stroke-width:3" />
+                </svg>
+            </div>
+            <div class="profile card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/profile.jpeg"  width= "110" class=" rounded-circle" alt="Aya Turchio Self Portrait">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 col-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Aya Turchio</h5>
+                        <p class="card-text">Illustrator, Graphic/UI/UX Designer, Web Developer</p>
+                    </div>
+                </div>
+            </div> <!--closes profile-->
+            <div class="line col-md-4 col-sm-2 col-1">
+                <svg> <line x1="0" y1="0" x2="400" y2="0" style="stroke:#302C5F;stroke-width:3" />
+                </svg>
+            </div>
+        </div> <!--closes container-->
+    <div class="glider-contain w-75 pt-4 pb-4">
+      <div class="glider">
+        <div>
+          <img class="w-100 rounded-3" src="https://placekitten.com/1600/400" alt="placeholder">
+        </div>
+        <div>
+          <img class="w-100" src="https://placekitten.com/1600/401" alt="placeholder">
+        </div>
+        <div>
+          <img class="w-100" src="https://placekitten.com/1600/402" alt="placeholder">
+        </div>
+        <div>
+          <img class="w-100" src="https://placekitten.com/1600/403" alt="placeholder">
+        </div>
+      </div>
+
+      <button aria-label="Previous" class="glider-prev">«</button>
+      <button aria-label="Next" class="glider-next">»</button>
+      <div role="tablist" class="dots" id="dots"></div>
+    </div> <!--closes glider-->
+    <div class="social card mb-5">
+        <div class="row g-2">
+            <div class="col-4">
+                <img src="images/store.svg"  class="" alt="Store Icon">
+            </div>
+            <div class="col-4">
+                <img src="images/twitter.svg"  class="" alt="Twitter Icon">
+            </div>
+            <div class="col-4">
+                <img src="images/instagram.svg"  class="" alt="Instagram Icon">
+            </div>
+        </div>
+    </div> <!--closes social-->
+
+  </main>
+  <footer>
     <nav class="navbar navbar-expand-sm ">
-        <div class="container-fluid">
-         
-        
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            
-            </ul>
-            <a class="navbar-brand" href="#"><img src="images/at-logo-light.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
-        </div>
-      </nav>
+      <div class="container-fluid">
+
+
+        <ul class="d-none d-md-flex navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+        <small class="me-3">&copy;Aya Turchio 2023</small>
+        <a class="navbar-brand d-none d-md-block" href="#"><img src="images/at-logo-light.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
+        <a class="navbar-brand d-md-none" href="#"><img src="images/at-logo.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
+      </div>
+    </nav>
     <div class="footer-mobile">
-        <small>&copy;Aya Turchio 2023</small>
-        <a class="navbar-brand" href="#"><img src="images/at-logo.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
+      
     </div>
-</footer>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!--CDN for glider.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <!-- Script to run Glider.js -->
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '#dots',
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
+  </script>
+</body>
+
 </html>

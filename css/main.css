@@ -22,13 +22,18 @@
     --bs-secondary-bg: #302C5F;
     --bs-font-sans-serif: "futura-pt", sans-serif;
 }
+
 header nav {
     background-color: var(--bs-primary);
 }
-footer nav {
-    background-color: var(--bs-secondary);
-    
+@media screen and (min-width:768px) {
+    footer nav {
+        background-color: var(--bs-secondary);
+        color: var(--bs-primary);
+    }
+
 }
+
 header .nav-link {
     color: var(--bs-secondary);
     --bs-nav-link-hover-color: white;
@@ -44,6 +49,28 @@ footer .nav-link {
     --bs-nav-link-hover-color: white;
     --bs-navbar-active-color: var(--bs-primary);
 }
-.footer-mobile {
-    display: none;
+
+
+.profile {
+    max-width: 25em;
 }
+/* 
+@media screen and (max-width: 300px) {
+    .footer-mobile {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .footer-ex nav {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 301px) {
+    
+    .footer-mobile {
+        display: none;
+    }
+} */
