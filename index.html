@@ -28,21 +28,19 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- @Abhay: adding justify-content-end class -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <!-- @Abhay: removing me-auto class -->
           <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Work</a>
+              <a class="nav-link" href="my-work.html">My Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -50,42 +48,42 @@
     </nav>
   </header>
   <main>
-        <div class="container row">
-            <div class="line col-md-4 col-sm-2 col-1">
-                <svg> <line x1="0" y1="0" x2="400" y2="0" style="stroke:#302C5F;stroke-width:3" />
-                </svg>
-            </div>
-            <div class="profile card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/profile.jpeg"  width= "110" class=" rounded-circle" alt="Aya Turchio Self Portrait">
-                    </div>
+        <div class="container-fluid mt-4">
+            <div class="row align-items-center">
+                <div class="line col-md-3 col-sm-2 col-1">
+                    <svg class="w-100" height="3px"> <line x1="0" y1="0" x2="800" y2="0" style="stroke:#302C5F;stroke-width:3" />
+                    </svg>
                 </div>
-                <div class="col-md-4 col-sm-8 col-10">
-                    <div class="card-body">
-                        <h5 class="card-title">Aya Turchio</h5>
-                        <p class="card-text">Illustrator, Graphic/UI/UX Designer, Web Developer</p>
+                <div class="col-md-6 col-sm-8 col-10 profile row">
+                    <div class="col-4">
+                        <div class="col-md-4">
+                            <img src="images/profile.jpeg"  width= "110" class=" rounded-circle" alt="Aya Turchio Self Portrait">
+                        </div>
                     </div>
+                        <div class="col-8">
+                            <h3 class="">Aya Turchio</h3>
+                            <p class="">Illustrator, Graphic/UI/UX Designer, Web Developer</p>
+                        </div>
+                </div> <!--closes profile-->
+                <div class="line col-md-3 col-sm-2 col-1">
+                    <svg class="w-100" height="3px"> <line x1="0" y1="0" x2="800" y2="0" style="stroke:#302C5F;stroke-width:3" />
+                    </svg>
                 </div>
-            </div> <!--closes profile-->
-            <div class="line col-md-4 col-sm-2 col-1">
-                <svg> <line x1="0" y1="0" x2="400" y2="0" style="stroke:#302C5F;stroke-width:3" />
-                </svg>
             </div>
-        </div> <!--closes container-->
-    <div class="glider-contain w-75 pt-4 pb-4">
+            </div> <!--closes container-->
+            <div class="glider-contain w-75 pt-4 pb-4">
       <div class="glider">
         <div>
-          <img class="w-100 rounded-3" src="https://placekitten.com/1600/400" alt="placeholder">
+          <img class="w-100 rounded-3" src="images/character-design-4.jpg" alt="Character Design 4">
         </div>
         <div>
-          <img class="w-100" src="https://placekitten.com/1600/401" alt="placeholder">
+          <img class="w-75 rounded-3" src="images/painting-1.JPG" alt="Painting of Fish">
         </div>
         <div>
-          <img class="w-100" src="https://placekitten.com/1600/402" alt="placeholder">
+          <img class="w-100 rounded-3" src="images/character-design-3.jpg" alt="Character Design 3">
         </div>
         <div>
-          <img class="w-100" src="https://placekitten.com/1600/403" alt="placeholder">
+          <img class="w-100 rounded-3" src="images/005_SHINING_RAIKOU.jpg" alt="Character Design 1">
         </div>
       </div>
 
@@ -93,19 +91,29 @@
       <button aria-label="Next" class="glider-next">»</button>
       <div role="tablist" class="dots" id="dots"></div>
     </div> <!--closes glider-->
-    <div class="social card mb-5">
-        <div class="row g-2">
-            <div class="col-4">
-                <img src="images/store.svg"  class="" alt="Store Icon">
-            </div>
-            <div class="col-4">
-                <img src="images/twitter.svg"  class="" alt="Twitter Icon">
-            </div>
-            <div class="col-4">
-                <img src="images/instagram.svg"  class="" alt="Instagram Icon">
-            </div>
-        </div>
-    </div> <!--closes social-->
+    <div class="container-fluid mt-4 mb-4 ">
+      <div class="row justify-content-center">
+          <div class="line col-md-2 col-sm-2 col-1">
+              <svg class="w-100" height="3px"> <line x1="0" y1="0" x2="800" y2="0" style="stroke:#302C5F;stroke-width:3" />
+              </svg>
+          </div>
+          <div class="col-md-8 col-sm-8 col-10 social row">
+            <div class="col-4 ">
+              <a href="google.com"><img src="images/store.svg"  class="" alt="Store Icon"></a>
+          </div>
+          <div class="col-4">
+              <a href="twitter.com"><img src="images/twitter.svg"  class="" alt="Twitter Icon"></a>
+          </div>
+          <div class="col-4">
+              <a href="instagram.com"><img src="images/instagram.svg"  class="" alt="Instagram Icon"></a>
+          </div>
+          </div> <!--closes social-->
+          <div class="line col-md-2 col-sm-2 col-1">
+              <svg class="w-100" height="3px"> <line x1="0" y1="0" x2="800" y2="0" style="stroke:#302C5F;stroke-width:3" />
+              </svg>
+          </div>
+      </div>
+      </div> <!--closes container-->
 
   </main>
   <footer>
@@ -115,20 +123,20 @@
 
         <ul class="d-none d-md-flex navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Work</a>
+            <a class="nav-link" href="my-work.html">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
 
         </ul>
-        <small class="me-3">&copy;Aya Turchio 2023</small>
+        <small aria-label="copyright" class="me-3">&copy;Aya Turchio 2023</small>
         <a class="navbar-brand d-none d-md-block" href="#"><img src="images/at-logo-light.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
         <a class="navbar-brand d-md-none" href="#"><img src="images/at-logo.png" alt="Aya Turchio Logo" width="100" height="45" class="d-inline-block align-text-top"></a>
       </div>

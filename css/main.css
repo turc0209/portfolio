@@ -21,6 +21,7 @@
     --bs-primary-bg: #C3DEFF;
     --bs-secondary-bg: #302C5F;
     --bs-font-sans-serif: "futura-pt", sans-serif;
+    --bs-primary-rgb: rgb(195,222,255);
 }
 
 header nav {
@@ -33,6 +34,31 @@ header nav {
     }
 
 }
+.contact-form ul {
+    list-style-type: none;
+}
+.card {
+    background-color: var(--bs-primary);
+    border: none;
+    max-width: 70em;
+}
+.contact-form {
+    background-color: var(--bs-primary);
+}
+button {
+    background-color: #302C5F;
+    color: #C3DEFF;
+    border: none;
+    border-radius: 0.4em;
+    cursor: pointer;
+    transition-duration: .4s;
+
+}
+button:hover, button:focus {
+    background-color: white;
+    color: #302C5F;
+}
+
 
 header .nav-link {
     color: var(--bs-secondary);
@@ -51,9 +77,6 @@ footer .nav-link {
 }
 
 
-.profile {
-    max-width: 25em;
-}
 /* 
 @media screen and (max-width: 300px) {
     .footer-mobile {
