@@ -42,9 +42,7 @@ header nav {
     border: none;
     max-width: 70em;
 }
-.contact-form {
-    background-color: var(--bs-primary);
-}
+
 button, .btn {
     background-color: #302C5F;
     color: #C3DEFF;
@@ -54,7 +52,8 @@ button, .btn {
     transition-duration: .4s;
 
 }
-button:hover, button:focus {
+button:hover, button:focus,
+.btn:hover, .btn:focus  {
     background-color: white;
     color: #302C5F;
 }
