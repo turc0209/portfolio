@@ -48,7 +48,6 @@
     </nav>
   </header>
   <main>
-    <div class="spacer"></div>
     <h3 class="text-center mt-4">Character Design</h3>
     <div class="glider-contain w-75 pt-4 pb-4">
         <div class="glider">
@@ -72,39 +71,49 @@
     </div> <!--closes glider-->
     <h3 class="text-center mt-4">Painting</h3>
     <div class="glider-contain w-75 pt-4 pb-4">
-        <div class="glider">
-          <div>
-            <img class="w-100 rounded-3" src="images/painting-1.JPG" alt="Painting of Fish">
-          </div>
-          <div>
-            <img class="w-75 rounded-3" src="images/painting-2.JPG" alt="Landscape Painting of grass and trees">
-          </div>
+      <div class="glider2">
+        <div>
+          <img class="w-100 rounded-3" src="images/painting-2.JPG" alt="Simple landscape painting">
         </div>
-  
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots" id="dots"></div>
+        <div>
+          <img class="w-75 rounded-3" src="images/painting-1.JPG" alt="Painting of Fish">
+        </div>
+        <div>
+          <img class="w-100 rounded-3" src="images/002_FLYGON.jpg" alt="Pokemon character in painted background">
+        </div>
+        <div>
+          <img class="w-100 rounded-3" src="images/005_SHINING_RAIKOU.jpg" alt="Character Design 1">
+        </div>
+        <div>
+          <img class="w-100 rounded-3" src="images/Lugia_Delta_Species.jpg" alt="Pokemon character in the sky">
+        </div>
+      </div>
+
+      <button aria-label="Previous" class="glider-prev prev2">«</button>
+      <button aria-label="Next" class="glider-next next2">»</button>
+      <div role="tablist" class="dots" id="points"></div>
     </div> <!--closes glider-->
+
     <h3 class="text-center mt-4">Graphic Design</h3>
     <div class="glider-contain w-75 pt-4 pb-4">
-        <div class="glider">
-          <div>
-            <img class="w-100 rounded-3" src="images/character-design-1.jpg" alt="Character Design 1">
-          </div>
-          <div>
-            <img class="w-75 rounded-3" src="images/character-design-2.jpg" alt="Character Design 2">
-          </div>
-          <div>
-            <img class="w-100 rounded-3" src="images/character-design-3.jpg" alt="Character Design 3">
-          </div>
-          <div>
-            <img class="w-100 rounded-3" src="images/character-design-4.jpg" alt="Character Design 4">
-          </div>
+      <div class="glider3">
+        <div>
+          <img class="w-100 rounded-3" src="images/at-logo.png" alt="Aya Turchio site logo">
         </div>
-  
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots" id="dots"></div>
+        <div>
+          <img class="w-75 rounded-3" src="images/bakery-logo.png" alt="bakery logo">
+        </div>
+        <div>
+          <img class="w-100 rounded-3" src="images/book-logo.png" alt="Book store logo">
+        </div>
+        <div>
+          <img class="w-100 rounded-3" src="images/notepad.png" alt="Doctor's notepad design">
+        </div>
+      </div>
+
+      <button aria-label="Previous" class="glider-prev prev3">«</button>
+      <button aria-label="Next" class="glider-next next3">»</button>
+      <div role="tablist" class="dots" id="points3"></div>
     </div> <!--closes glider-->
 
   </main>
@@ -144,11 +153,29 @@
   <!-- Script to run Glider.js -->
   <script>
     new Glider(document.querySelector('.glider'), {
-      slidesToShow: 3,
+      slidesToShow: 2,
       dots: '#dots',
       arrows: {
         prev: '.glider-prev',
         next: '.glider-next'
+      }
+    });
+    new Glider(document.querySelector('.glider2'), {
+      slidesToShow: 2,
+      dots: '#points',
+      draggable: true,
+      arrows: {
+        prev: '.prev2',
+        next: '.next2'
+      }
+    });
+    new Glider(document.querySelector('.glider3'), {
+      slidesToShow: 2,
+      dots: '#points3',
+      draggable: true,
+      arrows: {
+        prev: '.prev3',
+        next: '.next3'
       }
     });
   </script>

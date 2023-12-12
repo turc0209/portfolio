@@ -45,7 +45,7 @@ header nav {
 .contact-form {
     background-color: var(--bs-primary);
 }
-button {
+button, .btn {
     background-color: #302C5F;
     color: #C3DEFF;
     border: none;
