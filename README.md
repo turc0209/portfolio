@@ -21,3 +21,4 @@ Changing some of the elements that Bootstrap has pre-made was a challenge for me
 ## External Resources
 -From Adobe Fonts: Futura LT (https://use.typekit.net/zst3dai.css)
 -Social Media Icons from FontAwesome (https://fontawesome.com/)
+*Please note that all the artworks featured on my site have been created by me. Many of the paintings contain Pokemon characters and are owned by the Pokemon Company and Nintendo.*
